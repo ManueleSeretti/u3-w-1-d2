@@ -4,15 +4,15 @@ import { Component } from "react";
 class AllTheBooks extends Component {
   render() {
     return (
-      <div className="container">
-        <div className="row row-cols-md-4 row-cols-lg-5 row-cols-xl-7 gy-3">
+      <div className="container-fluid bg-warning">
+        <div className="row row-cols-sm-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-6 gy-3">
           {books.map((book) => (
             <div key={book.asin} className="col">
               <div className="card">
                 <img
                   src={book.img}
                   className="card-img-fluid"
-                  style={{ height: "350px", objectFit: "cover" }}
+                  style={{ height: "200px", objectFit: "container" }}
                   alt="..."
                 />
                 <div className="card-body">
